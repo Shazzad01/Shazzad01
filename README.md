@@ -1,7 +1,6 @@
 <h1 align="center">As-salamu alaykum 👋, I'm Shazzad</h1>
 <h3 align="center">I am looking for a job as a software quality assurance engineer where I can use my exceptional analytical skills and dedication to excellence.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=shazzad01&label=Profile%20views&color=0e75b6&style=flat" alt="shazzad01" /> </p>
 
 - 🔭 I’m currently working on **Automation Testing, Manual Testing, Performance Testing, API Testing, Security Testing**
 
