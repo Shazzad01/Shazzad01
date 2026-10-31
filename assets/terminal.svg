@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c101c" />
+      <stop offset="100%" stop-color="#080c16" />
+    </linearGradient>
+    <style>
+      .code-font { font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .cursor {
+        animation: blink 1s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Shell -->
+  <rect x="2" y="2" width="896" height="316" rx="14" fill="url(#termBg)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Terminal Title Bar -->
+  <path d="M 2 16 Q 2 2 16 2 L 884 2 Q 898 2 898 16 L 898 38 L 2 38 Z" fill="#131926" stroke="#1e293b" stroke-width="1" />
+
+  <!-- macOS Window Controls -->
+  <circle cx="24" cy="20" r="6" fill="#ff5f56" stroke="#e0443e" stroke-width="0.5" />
+  <circle cx="44" cy="20" r="6" fill="#ffbd2e" stroke="#dea123" stroke-width="0.5" />
+  <circle cx="64" cy="20" r="6" fill="#27c93f" stroke="#1aab29" stroke-width="0.5" />
+
+  <!-- Terminal Title -->
+  <text x="450" y="24" fill="#94a3b8" font-size="12" font-weight="600" class="code-font" text-anchor="middle">
+    shazzad@qa-core-node: ~/quality-architecture (typescript)
+  </text>
+
+  <!-- Code Area -->
+  <g class="code-font" font-size="12.5" xml:space="preserve">
+    <!-- Line numbers -->
+    <g fill="#334155" text-anchor="end">
+      <text x="36" y="66">1</text>
+      <text x="36" y="88">2</text>
+      <text x="36" y="110">3</text>
+      <text x="36" y="132">4</text>
+      <text x="36" y="154">5</text>
+      <text x="36" y="176">6</text>
+      <text x="36" y="198">7</text>
+      <text x="36" y="220">8</text>
+      <text x="36" y="242">9</text>
+      <text x="36" y="264">10</text>
+      <text x="36" y="286">11</text>
+    </g>
+
+    <!-- Code Content -->
+    <!-- Line 1 -->
+    <text x="60" y="66">
+      <tspan fill="#f43f5e">import</tspan> <tspan fill="#cbd5e1">{</tspan> <tspan fill="#38bdf8">QualityEngineer</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#38bdf8">EnterpriseImpact</tspan> <tspan fill="#cbd5e1">}</tspan> <tspan fill="#f43f5e">from</tspan> <tspan fill="#a7f3d0">'@brainstation-23/core'</tspan><tspan fill="#cbd5e1">;</tspan>
+    </text>
+
+    <!-- Line 2 -->
+    <text x="60" y="88">
+      <tspan fill="#f43f5e">export const</tspan> <tspan fill="#818cf8">shazzad</tspan><tspan fill="#cbd5e1">: </tspan><tspan fill="#38bdf8">QualityEngineer</tspan> <tspan fill="#cbd5e1">= {</tspan>
+    </text>
+
+    <!-- Line 3 -->
+    <text x="80" y="110">
+      <tspan fill="#94a3b8">title:</tspan> <tspan fill="#a7f3d0">"SQA Engineer II"</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#94a3b8">company:</tspan> <tspan fill="#a7f3d0">"Brain Station 23 PLC"</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#94a3b8">education:</tspan> <tspan fill="#a7f3d0">"B.Sc in CSE (CGPA 3.59)"</tspan><tspan fill="#cbd5e1">,</tspan>
+    </text>
+
+    <!-- Line 4 -->
+    <text x="80" y="132">
+      <tspan fill="#94a3b8">mission:</tspan> <tspan fill="#a7f3d0">"Zero-defect releases via shift-left automation &amp; continuous load resilience"</tspan><tspan fill="#cbd5e1">,</tspan>
+    </text>
+
+    <!-- Line 5 -->
+    <text x="80" y="154">
+      <tspan fill="#94a3b8">automationStack:</tspan> <tspan fill="#cbd5e1">[</tspan><tspan fill="#a7f3d0">"Playwright (TypeScript)"</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#a7f3d0">"Selenium WebDriver"</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#a7f3d0">"Appium Mobile"</tspan><tspan fill="#cbd5e1">],</tspan>
+    </text>
+
+    <!-- Line 6 -->
+    <text x="80" y="176">
+      <tspan fill="#94a3b8">performanceStack:</tspan> <tspan fill="#cbd5e1">[</tspan><tspan fill="#a7f3d0">"Apache JMeter"</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#a7f3d0">"Grafana k6"</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#a7f3d0">"BlazeMeter"</tspan><tspan fill="#cbd5e1">],</tspan>
+    </text>
+
+    <!-- Line 7 -->
+    <text x="80" y="198">
+      <tspan fill="#94a3b8">ciCdPipelines:</tspan> <tspan fill="#cbd5e1">[</tspan><tspan fill="#a7f3d0">"GitHub Actions"</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#a7f3d0">"GitLab CI/CD Automated Quality Gates"</tspan><tspan fill="#cbd5e1">],</tspan>
+    </text>
+
+    <!-- Line 8 -->
+    <text x="80" y="220">
+      <tspan fill="#94a3b8">provenImpact:</tspan> <tspan fill="#cbd5e1">{</tspan> <tspan fill="#94a3b8">regressionTimeCut:</tspan> <tspan fill="#f59e0b">"30%+"</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#94a3b8">productionCriticalLeaks:</tspan> <tspan fill="#10b981">0</tspan> <tspan fill="#cbd5e1">}</tspan>
+    </text>
+
+    <!-- Line 9 -->
+    <text x="60" y="242">
+      <tspan fill="#cbd5e1">};</tspan>
+    </text>
+
+    <!-- Line 10 (CLI execution) -->
+    <text x="60" y="268">
+      <tspan fill="#38bdf8">shazzad@qa-core</tspan><tspan fill="#cbd5e1">:~%</tspan> <tspan fill="#e2e8f0">npx playwright test --project=chromium --reporter=html</tspan>
+    </text>
+
+    <!-- Line 11 (Passed status) -->
+    <text x="60" y="292">
+      <tspan fill="#10b981">✓ [SUCCESS] 248 passed (0 failed, 0 flaky) in 42.6s</tspan>
+      <tspan fill="#38bdf8" class="cursor"> █</tspan>
+    </text>
+  </g>
+</svg>

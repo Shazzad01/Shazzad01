@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stripBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b101d" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .mono { font-family: 'SF Mono', 'Fira Code', Consolas, monospace; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="896" height="126" rx="12" fill="url(#stripBg)" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- 4 Pillars -->
+  <!-- Pillar 1 -->
+  <g transform="translate(24, 20)">
+    <circle cx="18" cy="18" r="16" fill="#0369a1" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1" />
+    <text x="18" y="24" font-size="16" text-anchor="middle">🛡️</text>
+    <text x="44" y="16" fill="#f8fafc" font-size="13" font-weight="700" class="sans">Shift-Left Testing</text>
+    <text x="44" y="34" fill="#94a3b8" font-size="11" class="sans">Risk identification &amp; early testability reviews</text>
+    <text x="44" y="52" fill="#64748b" font-size="10.5" class="mono">Defect Prevention &gt; Detection</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="230" y1="20" x2="230" y2="105" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Pillar 2 -->
+  <g transform="translate(246, 20)">
+    <circle cx="18" cy="18" r="16" fill="#065f46" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
+    <text x="18" y="24" font-size="16" text-anchor="middle">⚡</text>
+    <text x="44" y="16" fill="#f8fafc" font-size="13" font-weight="700" class="sans">CI/CD Quality Gates</text>
+    <text x="44" y="34" fill="#94a3b8" font-size="11" class="sans">Continuous regression on every PR / merge</text>
+    <text x="44" y="52" fill="#64748b" font-size="10.5" class="mono">Zero Broken Builds to Staging</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="450" y1="20" x2="450" y2="105" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Pillar 3 -->
+  <g transform="translate(466, 20)">
+    <circle cx="18" cy="18" r="16" fill="#7c2d12" fill-opacity="0.2" stroke="#f97316" stroke-width="1" />
+    <text x="18" y="24" font-size="16" text-anchor="middle">📈</text>
+    <text x="44" y="16" fill="#f8fafc" font-size="13" font-weight="700" class="sans">Performance SLA</text>
+    <text x="44" y="34" fill="#94a3b8" font-size="11" class="sans">Load, stress, bottleneck &amp; spike profiling</text>
+    <text x="44" y="52" fill="#64748b" font-size="10.5" class="mono">Sub-second Latency SLA</text>
+  </g>
+
+  <!-- Divider 3 -->
+  <line x1="675" y1="20" x2="675" y2="105" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Pillar 4 -->
+  <g transform="translate(692, 20)">
+    <circle cx="18" cy="18" r="16" fill="#581c87" fill-opacity="0.2" stroke="#a855f7" stroke-width="1" />
+    <text x="18" y="24" font-size="16" text-anchor="middle">📱</text>
+    <text x="44" y="16" fill="#f8fafc" font-size="13" font-weight="700" class="sans">Cross-Platform</text>
+    <text x="44" y="34" fill="#94a3b8" font-size="11" class="sans">Web, Android &amp; iOS responsive parity</text>
+    <text x="44" y="52" fill="#64748b" font-size="10.5" class="mono">Seamless Multi-Device UX</text>
+  </g>
+</svg>

@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1526" />
+      <stop offset="100%" stop-color="#080c16" />
+    </linearGradient>
+    <linearGradient id="cardGlow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#080c16" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="cardGlow2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#080c16" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="cardGlow3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#080c16" stop-opacity="0" />
+    </linearGradient>
+
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'SF Mono', 'Fira Code', Consolas, monospace; }
+      .chip-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #cbd5e1; }
+    </style>
+  </defs>
+
+  <!-- CARD 1: Automation Frameworks (top left, 280x170) -->
+  <g transform="translate(0, 0)">
+    <rect width="286" height="175" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5" />
+    <rect width="286" height="175" rx="12" fill="url(#cardGlow1)" />
+    <!-- Header -->
+    <circle cx="28" cy="28" r="14" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1" />
+    <text x="28" y="32" font-size="14" text-anchor="middle">🚀</text>
+    <text x="52" y="27" fill="#f8fafc" font-size="13" font-weight="700" class="sans">Test Automation</text>
+    <text x="52" y="42" fill="#64748b" font-size="10.5" class="sans">Web &amp; Mobile E2E Frameworks</text>
+
+    <!-- Chips -->
+    <g transform="translate(16, 62)">
+      <!-- Playwright -->
+      <rect x="0" y="0" width="124" height="26" rx="6" fill="#131c31" stroke="#38bdf8" stroke-width="0.75" />
+      <text x="62" y="17" text-anchor="middle" class="chip-text">Playwright (TS)</text>
+
+      <!-- Selenium -->
+      <rect x="130" y="0" width="124" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="192" y="17" text-anchor="middle" class="chip-text">Selenium WebDriver</text>
+
+      <!-- Appium -->
+      <rect x="0" y="34" width="105" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="52" y="51" text-anchor="middle" class="chip-text">Appium Mobile</text>
+
+      <!-- Cypress -->
+      <rect x="111" y="34" width="70" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="146" y="51" text-anchor="middle" class="chip-text">Cypress</text>
+
+      <!-- TestNG -->
+      <rect x="187" y="34" width="67" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="220" y="51" text-anchor="middle" class="chip-text">TestNG</text>
+
+      <!-- POM Pattern -->
+      <rect x="0" y="68" width="254" height="24" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.5" />
+      <text x="127" y="84" text-anchor="middle" fill="#94a3b8" font-size="10.5" class="mono">Page Object Model (POM) Design</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: Performance Testing (top middle, 286x175) -->
+  <g transform="translate(306, 0)">
+    <rect width="286" height="175" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5" />
+    <rect width="286" height="175" rx="12" fill="url(#cardGlow2)" />
+    <!-- Header -->
+    <circle cx="28" cy="28" r="14" fill="#d97706" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1" />
+    <text x="28" y="32" font-size="14" text-anchor="middle">⚡</text>
+    <text x="52" y="27" fill="#f8fafc" font-size="13" font-weight="700" class="sans">Performance &amp; Load</text>
+    <text x="52" y="42" fill="#64748b" font-size="10.5" class="sans">High Concurrency &amp; Bottlenecks</text>
+
+    <!-- Chips -->
+    <g transform="translate(16, 62)">
+      <rect x="0" y="0" width="124" height="26" rx="6" fill="#131c31" stroke="#f59e0b" stroke-width="0.75" />
+      <text x="62" y="17" text-anchor="middle" class="chip-text">Apache JMeter</text>
+
+      <rect x="130" y="0" width="124" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="192" y="17" text-anchor="middle" class="chip-text">Grafana k6</text>
+
+      <rect x="0" y="34" width="115" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="57" y="51" text-anchor="middle" class="chip-text">BlazeMeter</text>
+
+      <rect x="121" y="34" width="133" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="187" y="51" text-anchor="middle" class="chip-text">Stress &amp; Spike Runs</text>
+
+      <rect x="0" y="68" width="254" height="24" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.5" />
+      <text x="127" y="84" text-anchor="middle" fill="#94a3b8" font-size="10.5" class="mono">RPS, Latency &amp; Threshold SLAs</text>
+    </g>
+  </g>
+
+  <!-- CARD 3: API & Services (top right, 286x175) -->
+  <g transform="translate(612, 0)">
+    <rect width="288" height="175" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5" />
+    <rect width="288" height="175" rx="12" fill="url(#cardGlow3)" />
+    <!-- Header -->
+    <circle cx="28" cy="28" r="14" fill="#059669" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
+    <text x="28" y="32" font-size="14" text-anchor="middle">🔌</text>
+    <text x="52" y="27" fill="#f8fafc" font-size="13" font-weight="700" class="sans">API &amp; Backend QA</text>
+    <text x="52" y="42" fill="#64748b" font-size="10.5" class="sans">Schema &amp; Contract Verification</text>
+
+    <!-- Chips -->
+    <g transform="translate(16, 62)">
+      <rect x="0" y="0" width="124" height="26" rx="6" fill="#131c31" stroke="#10b981" stroke-width="0.75" />
+      <text x="62" y="17" text-anchor="middle" class="chip-text">Postman</text>
+
+      <rect x="130" y="0" width="126" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="193" y="17" text-anchor="middle" class="chip-text">Newman CLI</text>
+
+      <rect x="0" y="34" width="124" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="62" y="51" text-anchor="middle" class="chip-text">RESTful APIs</text>
+
+      <rect x="130" y="34" width="126" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="193" y="51" text-anchor="middle" class="chip-text">JSON Schema Eval</text>
+
+      <rect x="0" y="68" width="256" height="24" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.5" />
+      <text x="128" y="84" text-anchor="middle" fill="#94a3b8" font-size="10.5" class="mono">Automated CI Regression Runs</text>
+    </g>
+  </g>
+
+  <!-- CARD 4: CI/CD & DevOps (bottom left, 286x175) -->
+  <g transform="translate(0, 195)">
+    <rect width="286" height="175" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5" />
+    <circle cx="28" cy="28" r="14" fill="#7c3aed" fill-opacity="0.2" stroke="#a855f7" stroke-width="1" />
+    <text x="28" y="32" font-size="14" text-anchor="middle">⚙️</text>
+    <text x="52" y="27" fill="#f8fafc" font-size="13" font-weight="700" class="sans">CI/CD Quality Gates</text>
+    <text x="52" y="42" fill="#64748b" font-size="10.5" class="sans">Continuous Automated Validation</text>
+
+    <g transform="translate(16, 62)">
+      <rect x="0" y="0" width="124" height="26" rx="6" fill="#131c31" stroke="#a855f7" stroke-width="0.75" />
+      <text x="62" y="17" text-anchor="middle" class="chip-text">GitHub Actions</text>
+
+      <rect x="130" y="0" width="124" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="192" y="17" text-anchor="middle" class="chip-text">GitLab CI/CD</text>
+
+      <rect x="0" y="34" width="80" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="40" y="51" text-anchor="middle" class="chip-text">Git / VCS</text>
+
+      <rect x="86" y="34" width="168" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="170" y="51" text-anchor="middle" class="chip-text">PR Health Checks</text>
+
+      <rect x="0" y="68" width="254" height="24" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.5" />
+      <text x="127" y="84" text-anchor="middle" fill="#94a3b8" font-size="10.5" class="mono">Zero Broken Builds to Staging</text>
+    </g>
+  </g>
+
+  <!-- CARD 5: Languages & Runtimes (bottom middle, 286x175) -->
+  <g transform="translate(306, 195)">
+    <rect width="286" height="175" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5" />
+    <circle cx="28" cy="28" r="14" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1" />
+    <text x="28" y="32" font-size="14" text-anchor="middle">💻</text>
+    <text x="52" y="27" fill="#f8fafc" font-size="13" font-weight="700" class="sans">Languages &amp; Core</text>
+    <text x="52" y="42" fill="#64748b" font-size="10.5" class="sans">Scripting &amp; Framework Tech</text>
+
+    <g transform="translate(16, 62)">
+      <rect x="0" y="0" width="124" height="26" rx="6" fill="#131c31" stroke="#38bdf8" stroke-width="0.75" />
+      <text x="62" y="17" text-anchor="middle" class="chip-text">TypeScript</text>
+
+      <rect x="130" y="0" width="124" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="192" y="17" text-anchor="middle" class="chip-text">JavaScript (ES6+)</text>
+
+      <rect x="0" y="34" width="105" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="52" y="51" text-anchor="middle" class="chip-text">Java (OOP)</text>
+
+      <rect x="111" y="34" width="143" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="182" y="51" text-anchor="middle" class="chip-text">HTML5 / CSS3</text>
+
+      <rect x="0" y="68" width="254" height="24" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.5" />
+      <text x="127" y="84" text-anchor="middle" fill="#94a3b8" font-size="10.5" class="mono">Type-Safe &amp; Clean Code Standards</text>
+    </g>
+  </g>
+
+  <!-- CARD 6: Agile & Management (bottom right, 288x175) -->
+  <g transform="translate(612, 195)">
+    <rect width="288" height="175" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5" />
+    <circle cx="28" cy="28" r="14" fill="#059669" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
+    <text x="28" y="32" font-size="14" text-anchor="middle">📋</text>
+    <text x="52" y="27" fill="#f8fafc" font-size="13" font-weight="700" class="sans">Agile &amp; QA Management</text>
+    <text x="52" y="42" fill="#64748b" font-size="10.5" class="sans">Sprint, Defects &amp; Traceability</text>
+
+    <g transform="translate(16, 62)">
+      <rect x="0" y="0" width="100" height="26" rx="6" fill="#131c31" stroke="#10b981" stroke-width="0.75" />
+      <text x="50" y="17" text-anchor="middle" class="chip-text">Jira Software</text>
+
+      <rect x="106" y="0" width="150" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="181" y="17" text-anchor="middle" class="chip-text">Azure DevOps Boards</text>
+
+      <rect x="0" y="34" width="75" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="37" y="51" text-anchor="middle" class="chip-text">Trello</text>
+
+      <rect x="81" y="34" width="75" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="118" y="51" text-anchor="middle" class="chip-text">Asana</text>
+
+      <rect x="162" y="34" width="94" height="26" rx="6" fill="#131c31" stroke="#334155" stroke-width="0.75" />
+      <text x="209" y="51" text-anchor="middle" class="chip-text">Agile/Scrum</text>
+
+      <rect x="0" y="68" width="256" height="24" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.5" />
+      <text x="128" y="84" text-anchor="middle" fill="#94a3b8" font-size="10.5" class="mono">Defect Lifecycle &amp; Root-Cause</text>
+    </g>
+  </g>
+</svg>
