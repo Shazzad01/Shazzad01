@@ -1,11 +1,6 @@
 <div align="center">
-  <!-- Dynamic Custom Animated Header -->
+  <!-- Dynamic Custom Animated Header with Built-In Rotating Tagline -->
   <img src="./assets/header.svg" width="100%" alt="Muhammad Shazzad Mia Header" />
-
-  <!-- Animated Typing Headline -->
-  <a href="https://linkedin.com/in/md-shazzad-mia">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2600&pause=1100&color=38BDF8&center=true&vCenter=true&multiline=false&width=680&height=45&lines=SQA+Engineer+II+%40+Brain+Station+23+PLC;Playwright+(TypeScript)+%26+Selenium+WebAutomation;JMeter+%26+k6+High-Concurrency+Performance+Testing;CI%2FCD+Quality+Gates+(GitHub+Actions+%26+GitLab+CI);Enterprise+E-Commerce+QA+(Shwopno+%7C+Paragon+Food)" alt="Typing Headline" />
-  </a>
 </div>
 
 <br />
@@ -31,6 +26,17 @@
 <br />
 
 <!-- ========================================================================= -->
+<!-- 📊 ENTERPRISE QUALITY BENCHMARKS & METRICS -->
+<!-- ========================================================================= -->
+### 📊 Quality Engineering Benchmarks & Track Record
+
+<div align="center">
+  <img src="./assets/engineering-metrics.svg" width="100%" alt="Quality Engineering Benchmarks" />
+</div>
+
+<br />
+
+<!-- ========================================================================= -->
 <!-- 🛠️ TECHNICAL ARSENAL & TOOLING BENTO GRID -->
 <!-- ========================================================================= -->
 ### 🛠️ Technical Stack & Tooling
@@ -49,31 +55,6 @@
 <div align="center">
   <img src="./assets/qa-matrix.svg" width="100%" alt="QA Philosophy Matrix" />
 </div>
-
-<br />
-
-<!-- ========================================================================= -->
-<!-- 📊 GITHUB ACTIVITY & METRICS -->
-<!-- ========================================================================= -->
-### 📊 GitHub Activity & Analytics
-
-<!-- 3D Contribution Graph -->
-<div align="center">
-  <img src="https://github-profile-3d-contrib.vercel.app/api?username=Shazzad01&theme=tokyonight" alt="Muhammad Shazzad 3D Contribution Graph" width="98%" />
-</div>
-
-<br />
-
-<!-- Parallel Streak & Stats in TokyoNight -->
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shazzad01&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api?username=Shazzad01&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&title_color=38bdf8&icon_color=a855f7" alt="GitHub Stats" width="49%" />
-</p>
-
-<!-- Top Languages Chart -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shazzad01&layout=compact&theme=tokyonight&hide_border=true&title_color=38bdf8" alt="Top Languages" width="62%" />
-</p>
 
 <br />
 
