@@ -1,6 +1,6 @@
 <div align="center">
   <!-- Clean Animated Vector Header -->
-  <img src="./assets/header.svg" width="100%" alt="Muhammad Shazzad Mia Header" />
+  <img src="./assets/banner.svg" width="100%" alt="Muhammad Shazzad Mia Banner" />
 </div>
 
 <br />
