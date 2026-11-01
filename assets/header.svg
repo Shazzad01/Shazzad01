@@ -1,39 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0f1d" />
-      <stop offset="60%" stop-color="#0e172a" />
-      <stop offset="100%" stop-color="#0a0f1d" />
+    <!-- Adaptive Text Gradient -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#0284c7" />
+      <animate attributeName="stop-color" values="#0284c7;#6366f1;#0ea5e9;#0284c7" dur="6s" repeatCount="indefinite" />
     </linearGradient>
-
-    <!-- Animated Ambient Border Glow -->
-    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8">
-        <animate attributeName="stop-color" values="#38bdf8;#818cf8;#34d399;#38bdf8" dur="8s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="50%" stop-color="#818cf8">
-        <animate attributeName="stop-color" values="#818cf8;#34d399;#38bdf8;#818cf8" dur="8s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#34d399">
-        <animate attributeName="stop-color" values="#34d399;#38bdf8;#818cf8;#34d399" dur="8s" repeatCount="indefinite" />
-      </stop>
-    </linearGradient>
-
-    <!-- Subtle Grid Lines -->
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1e293b" stroke-width="0.65" stroke-opacity="0.4" />
-    </pattern>
-
-    <!-- Radial Ambient Flares -->
-    <radialGradient id="flareLeft" cx="10%" cy="30%" r="55%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18" />
-      <stop offset="100%" stop-color="#0a0f1d" stop-opacity="0" />
-    </radialGradient>
-    <radialGradient id="flareRight" cx="90%" cy="70%" r="55%">
-      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.16" />
-      <stop offset="100%" stop-color="#0a0f1d" stop-opacity="0" />
-    </radialGradient>
 
     <style>
       .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
@@ -45,96 +18,73 @@
       }
       .live-dot {
         animation: pulse 2.2s infinite ease-in-out;
-        transform-origin: 47px 27px;
+        transform-origin: 278px 16px;
       }
 
-      @keyframes textCycle1 {
-        0%, 30% { opacity: 1; transform: translateY(0); }
-        35%, 95% { opacity: 0; transform: translateY(-4px); }
+      @keyframes cycle1 {
+        0%, 28% { opacity: 1; transform: translateY(0); }
+        33%, 95% { opacity: 0; transform: translateY(-3px); }
         100% { opacity: 1; transform: translateY(0); }
       }
-      @keyframes textCycle2 {
-        0%, 32% { opacity: 0; transform: translateY(4px); }
-        36%, 64% { opacity: 1; transform: translateY(0); }
-        68%, 100% { opacity: 0; transform: translateY(-4px); }
+      @keyframes cycle2 {
+        0%, 30% { opacity: 0; transform: translateY(3px); }
+        35%, 62% { opacity: 1; transform: translateY(0); }
+        67%, 100% { opacity: 0; transform: translateY(-3px); }
       }
-      @keyframes textCycle3 {
-        0%, 65% { opacity: 0; transform: translateY(4px); }
-        70%, 96% { opacity: 1; transform: translateY(0); }
-        100% { opacity: 0; transform: translateY(-4px); }
+      @keyframes cycle3 {
+        0%, 64% { opacity: 0; transform: translateY(3px); }
+        69%, 96% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(-3px); }
       }
 
-      .cycle-1 { animation: textCycle1 10s infinite ease-in-out; }
-      .cycle-2 { animation: textCycle2 10s infinite ease-in-out; }
-      .cycle-3 { animation: textCycle3 10s infinite ease-in-out; }
+      .role-1 { animation: cycle1 9s infinite ease-in-out; }
+      .role-2 { animation: cycle2 9s infinite ease-in-out; }
+      .role-3 { animation: cycle3 9s infinite ease-in-out; }
     </style>
   </defs>
 
-  <!-- Container Box -->
-  <rect x="2" y="2" width="896" height="176" rx="14" fill="url(#bg)" stroke="#1e293b" stroke-width="1.2" />
-  <rect x="2" y="2" width="896" height="176" rx="14" fill="url(#grid)" />
-  <rect x="2" y="2" width="896" height="176" rx="14" fill="url(#flareLeft)" pointer-events="none" />
-  <rect x="2" y="2" width="896" height="176" rx="14" fill="url(#flareRight)" pointer-events="none" />
+  <!-- Transparent Background (Adapts Natively to Both Light and Dark GitHub Themes) -->
+  <rect width="100%" height="100%" fill="none" />
 
-  <!-- Animated Top Edge Light -->
-  <rect x="2" y="2" width="896" height="2" fill="url(#borderGlow)" rx="1" />
-
-  <!-- Top Status Badge -->
-  <g transform="translate(36, 20)">
-    <rect width="320" height="24" rx="12" fill="#0b1120" stroke="#334155" stroke-width="0.8" />
-    <circle cx="12" cy="12" r="4.5" fill="#10b981" class="live-dot" />
-    <text x="26" y="16" fill="#94a3b8" font-size="10.5" font-weight="600" class="mono" letter-spacing="1.2">
+  <!-- Top Status Badge (Centered) -->
+  <g transform="translate(425, 18)" text-anchor="middle">
+    <!-- Centered status badge: width 340, centered at 0 -->
+    <rect x="-170" y="0" width="340" height="24" rx="12" fill="#0f172a" stroke="#334155" stroke-width="0.8" />
+    <circle cx="-148" cy="12" r="4.5" fill="#10b981" class="live-dot" />
+    <text x="8" y="16" fill="#94a3b8" font-size="10.5" font-weight="600" class="mono" letter-spacing="1.2">
       SQA ENGINEER II • BRAIN STATION 23 PLC
     </text>
   </g>
 
-  <!-- Title Name -->
-  <text x="36" y="90" fill="#f8fafc" font-size="38" font-weight="800" class="sans" letter-spacing="-0.5">
+  <!-- Big Name Headline (Centered) -->
+  <text x="425" y="80" text-anchor="middle" fill="url(#nameGrad)" font-size="40" font-weight="800" class="sans" letter-spacing="-0.5">
     Muhammad Shazzad Mia
   </text>
 
-  <!-- Dynamic Animated Cycling Role Subtitle -->
-  <g transform="translate(36, 124)">
+  <!-- Animated Rotating Tagline (Centered) -->
+  <g transform="translate(425, 115)" text-anchor="middle">
     <!-- Role 1 -->
-    <g class="cycle-1">
+    <g class="role-1">
       <text font-size="14.5" font-weight="600" class="mono">
-        <tspan fill="#38bdf8">❯ </tspan>
-        <tspan fill="#e2e8f0">E2E Automation Specialist </tspan>
-        <tspan fill="#64748b">— Playwright (TypeScript), Selenium &amp; Appium</tspan>
+        <tspan fill="#0284c7">⚡ E2E Automation:</tspan>
+        <tspan fill="#475569"> Playwright (TypeScript) • Selenium • Appium</tspan>
       </text>
     </g>
 
     <!-- Role 2 -->
-    <g class="cycle-2">
+    <g class="role-2">
       <text font-size="14.5" font-weight="600" class="mono">
-        <tspan fill="#f59e0b">❯ </tspan>
-        <tspan fill="#e2e8f0">Performance Engineering </tspan>
-        <tspan fill="#64748b">— Apache JMeter, Grafana k6 &amp; Concurrency SLAs</tspan>
+        <tspan fill="#d97706">⚡ Performance Testing:</tspan>
+        <tspan fill="#475569"> Apache JMeter • Grafana k6 • BlazeMeter</tspan>
       </text>
     </g>
 
     <!-- Role 3 -->
-    <g class="cycle-3">
+    <g class="role-3">
       <text font-size="14.5" font-weight="600" class="mono">
-        <tspan fill="#34d399">❯ </tspan>
-        <tspan fill="#e2e8f0">Continuous Quality Gates </tspan>
-        <tspan fill="#64748b">— GitHub Actions, GitLab CI/CD &amp; Postman API</tspan>
+        <tspan fill="#059669">⚡ Quality Engineering:</tspan>
+        <tspan fill="#475569"> CI/CD Automated PR Gates • Postman &amp; Newman API</tspan>
       </text>
     </g>
-  </g>
-
-  <!-- Bottom Pills -->
-  <g transform="translate(36, 142)">
-    <circle cx="4" cy="4" r="2.5" fill="#38bdf8" />
-    <text x="14" y="8" fill="#94a3b8" font-size="11" font-weight="500" class="sans">Web, Android &amp; iOS</text>
-
-    <circle cx="140" cy="4" r="2.5" fill="#818cf8" />
-    <text x="150" y="8" fill="#94a3b8" font-size="11" font-weight="500" class="sans">Shift-Left Quality Strategy</text>
-
-    <circle cx="316" cy="4" r="2.5" fill="#34d399" />
-    <text x="326" y="8" fill="#94a3b8" font-size="11" font-weight="500" class="sans">B.Sc. in CSE (CGPA 3.59)</text>
-
-    <circle cx="488" cy="4" r="2.5" fill="#f59e0b" />
-    <text x="498" y="8" fill="#94a3b8" font-size="11" font-weight="500" class="sans">Dhaka, Bangladesh</text>
   </g>
 </svg>
